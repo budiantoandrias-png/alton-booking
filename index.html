@@ -622,9 +622,19 @@ window.open(
 }
 
 function openAdmin(){
-document.getElementById("adminPanel")
-.classList.add("active");
+    const password = "alton123";
+    let input = prompt("Masukkan Password Admin:");
+
+    if(input === password){
+        document.getElementById("adminPanel")
+        .classList.add("active");
+    } else {
+        alert("Password salah!");
+    }
 }
+
+
+
 
 function closeAdmin(){
 document.getElementById("adminPanel")
