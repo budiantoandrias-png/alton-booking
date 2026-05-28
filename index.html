@@ -297,7 +297,7 @@ transform:translateY(0);
 
 <body>
 
-<button class="admin-btn" onclick="checkAdminPassword()">
+<button class="admin-btn" onclick="openAdmin()">
 Admin
 </button>
 
@@ -460,16 +460,7 @@ Tutup Admin
 </button>
 
 </div>
-<script>
-function checkAdminPassword() {
-    const password = "alton123";
-    let input = prompt("Masukkan Password Admin:");
 
-    if(input === password){
-        openAdmin();
-    } else {
-        alert("Password salah!");
-    }
 }
 </script>
 
