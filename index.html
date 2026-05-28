@@ -460,7 +460,16 @@ Tutup Admin
 </button>
 
 </div>
+<script>
+const password = "alton123";
 
+let input = prompt("Masukkan Password Admin:");
+
+if(input !== password){
+    alert("Password salah!");
+    window.location.href="/";
+}
+</script>
 <script>
 
 let data = JSON.parse(localStorage.getItem("altonData")) || {
