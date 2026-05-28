@@ -461,15 +461,26 @@ Tutup Admin
 
 </div>
 <script>
-const password = "alton123";
+function checkAdminPassword() {
+    const password = "alton123";
+    let input = prompt("Masukkan Password Admin:");
 
-let input = prompt("Masukkan Password Admin:");
-
-if(input !== password){
-    alert("Password salah!");
-    window.location.href="https://google.com";
+    if(input === password){
+        openAdmin();
+    } else {
+        alert("Password salah!");
+    }
 }
 </script>
+
+
+
+
+
+
+
+
+
 <script>
 
 let data = JSON.parse(localStorage.getItem("altonData")) || {
